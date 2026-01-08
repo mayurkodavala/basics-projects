@@ -1,0 +1,55 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffcc;
+}
+
+/* Center container */
+.center {
+    text-align: center;
+}
+
+/* Banner Styling */
+#banner {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+/* Clock Styling */
+#clock {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border: 3px solid #00ffcc;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px #00ffcc, inset 0 0 10px #00ffcc;
+    text-shadow: 0 0 15px #00ffcc;
+}
+
+/* Optional: glowing animation */
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #00ffcc; }
+    50% { text-shadow: 0 0 20px #00ffcc; }
+    100% { text-shadow: 0 0 10px #00ffcc; }
+}
+
+#clock {
+    animation: glow 2s infinite ease-in-out;
+}
+
